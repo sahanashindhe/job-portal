@@ -5,8 +5,8 @@ import {applyjob, getapplicationsoflogineduser, updateapplication, deleteapplica
 
 
 router.post('/apply/:jobid/:userid',applyjob);
-router.get('/apply/:userid',getapplicationsoflogineduser);
-router.get('/apply/:userid',getapplicationofparticularjob);
+router.get('/applications/:userid',getapplicationsoflogineduser);
+router.get('/applicationsofjob/:jobid',getapplicationofparticularjob);
 router.put('/updateapplication/:id',updateapplication);
 router.delete('/deleteapplication/:id',deleteapplication);
 
